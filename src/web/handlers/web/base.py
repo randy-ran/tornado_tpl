@@ -7,4 +7,4 @@ from tornado.database import Connection
 import os
 
 class BaseHandler(tornado.web.RequestHandler):
-    pass
+      pass

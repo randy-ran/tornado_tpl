@@ -6,16 +6,15 @@ import tornado.ioloop
 import tornado.web
 import logging
 from tornado.options import define, options
-#from handlers.admin.main import MainHandler
+from handlers.web.register import RegisterHandler
 #from handlers.admin.member import MemberHandler
 from handlers.web.index import IndexHandler
-
 
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r"/", IndexHandler),
-            #(r"/admin", MainHandler),
+            (r"/register", RegisterHandler),
             #(r"/admin/member_list(?:(?:/?)$|/)(\d+)?", MemberHandler),
         ]
         
@@ -30,7 +29,6 @@ class Application(tornado.web.Application):
         )
         tornado.web.Application.__init__(self, handlers, **settings)
    
-
 def Main():
     print 'starting web server...'
     tornado.options.parse_command_line()

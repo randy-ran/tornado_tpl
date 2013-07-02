@@ -6,4 +6,7 @@ from base import BaseHandler
 class IndexHandler(BaseHandler):
     def get(self):
         #self.redirect('/admin')
-        self.write("Hello, world")
+        if self.current_user:
+            return self.render("authenticated/index.html")
+        else:
+            return self.render("index.html")
