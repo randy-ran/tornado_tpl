@@ -63,7 +63,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <i class="icon-user icon-large"></i>
-                            {{ handler.current_user.screen_name }}
+                            {{ handler.get_current_username('screen_name') }}
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">

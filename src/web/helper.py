@@ -6,8 +6,7 @@ except ImportError:
     import simplejson as json
 
 def hash_password(password):
-    salt = config['password_salt']
-
+    salt = "xl8moEeQSNa0t8WUzBM4VQ==" #config['password_salt']
     return hashlib.sha512(password + salt).hexdigest()
 
 

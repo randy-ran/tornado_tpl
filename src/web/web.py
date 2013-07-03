@@ -7,7 +7,7 @@ import tornado.web
 import logging
 from tornado.options import define, options
 from handlers.web.register import RegisterHandler
-#from handlers.admin.member import MemberHandler
+from handlers.web.login import *
 from handlers.web.index import IndexHandler
 
 class Application(tornado.web.Application):
@@ -15,6 +15,8 @@ class Application(tornado.web.Application):
         handlers = [
             (r"/", IndexHandler),
             (r"/register", RegisterHandler),
+            (r"/login", LoginHandler),
+            (r"/logout",LogoutHandler),
             #(r"/admin/member_list(?:(?:/?)$|/)(\d+)?", MemberHandler),
         ]
         
@@ -25,6 +27,7 @@ class Application(tornado.web.Application):
             static_path=os.path.join(os.path.dirname(__file__), "static"),
 #            xsrf_cookies=True,
 #            ui_modules= {"Post": PostModule},
+            invite_only=True,
             debug=True,
         )
         tornado.web.Application.__init__(self, handlers, **settings)
