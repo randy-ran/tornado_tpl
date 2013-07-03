@@ -5,8 +5,7 @@ import tornado.web
 from tornado.options import options
 from tornado.database import Connection
 import os
-from web.helper import to_json
-from pprint import pprint
+#from pprint import pprint
 
 USER_COOKIE_NAME = "user"
 
@@ -18,7 +17,7 @@ class BaseHandler(tornado.web.RequestHandler):
         else:
             return None
     
-    def get_current_username(self,key='id'):
+    def get_current_userinfo(self,key='id'):
         user_json = self.get_current_user()
         if user_json:
             return user_json[key]
