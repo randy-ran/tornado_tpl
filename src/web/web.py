@@ -6,8 +6,7 @@ import tornado.ioloop
 import tornado.web
 import logging
 from tornado.options import define, options
-from handlers.web.register import RegisterHandler
-from handlers.web.login import *
+from handlers.web.account import *
 from handlers.web.index import IndexHandler
 
 class Application(tornado.web.Application):
