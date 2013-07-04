@@ -1,0 +1,431 @@
+INFO:root:04/07/2013 11:57:26 log.txt test
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+INFO:root:04/07/2013 11:57:44 log.txt test
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+INFO:root:04/07/2013 11:58:09 log.txt test
+INFO:root:04/07/2013 11:58:09 starting web server...
+ERROR:root:04/07/2013 11:58:22 1
+ERROR:root:04/07/2013 11:58:23 2
+ERROR:root:04/07/2013 11:58:23 3
+INFO:root:304 GET /devgen (127.0.0.1) 1006.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+INFO:root:04/07/2013 11:59:33 log.txt test
+INFO:root:04/07/2013 11:59:33 starting web server...
+INFO:root:04/07/2013 11:59:33 wait for connecting...
+INFO:root:G:\GitHub\tornado_tpl\src\config.py modified; restarting server
+INFO:root:04/07/2013 12:00:59 log.txt test
+INFO:root:04/07/2013 12:00:59 starting web server...
+INFO:root:04/07/2013 12:00:59 wait for connecting...
+INFO:root:G:\GitHub\tornado_tpl\src\comm\logger.py modified; restarting server
+ERROR:root:04/07/2013 12:02:16 log.txt error
+INFO:root:04/07/2013 12:02:16 wait for connecting...
+ERROR:root:04/07/2013 12:02:24 1
+ERROR:root:04/07/2013 12:02:25 2
+ERROR:root:04/07/2013 12:02:25 3
+INFO:root:304 GET /devgen (127.0.0.1) 1005.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+ERROR:root:04/07/2013 12:02:56 log.txt error
+INFO:root:04/07/2013 12:02:56 wait for connecting...
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+ERROR:root:04/07/2013 12:03:08 log.txt error
+INFO:root:G:\GitHub\tornado_tpl\src\web.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:200 GET / (127.0.0.1) 94.00ms
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:304 GET / (127.0.0.1) 16.00ms
+INFO:root:304 GET /static/css/bootstrap.min.css?v=ac928 (127.0.0.1) 23.00ms
+INFO:root:304 GET /static/css/font-awesome.min.css?v=8992b (127.0.0.1) 0.00ms
+INFO:root:304 GET /static/css/app.css?v=d41d8 (127.0.0.1) 0.00ms
+INFO:root:304 GET /static/js/bootstrap.min.js?v=56241 (127.0.0.1) 0.00ms
+INFO:root:304 GET /static/js/app.js?v=74717 (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\config.py modified; restarting server
+INFO:root:200 GET /register (127.0.0.1) 18.00ms
+INFO:root:200 POST /register (127.0.0.1) 12.00ms
+INFO:root:200 GET /login (127.0.0.1) 8.00ms
+INFO:root:200 POST /login (127.0.0.1) 9.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\web.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:200 GET /register (127.0.0.1) 15.00ms
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:INSERT INTO tbl_member (username, password, longitude, fullname, age, create_date, last_update, email) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+INFO:sqlalchemy.engine.base.Engine:(1372911072.54, '1234567', 0, '', '', 0, 0, 'randy2@oubk.com')
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+WHERE tbl_member.member_id = %s
+INFO:sqlalchemy.engine.base.Engine:(5L,)
+INFO:root:302 POST /register (127.0.0.1) 19.00ms
+WARNING:root:404 GET /5 (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:200 GET /register (127.0.0.1) 25.00ms
+INFO:root:200 GET /login (127.0.0.1) 10.00ms
+INFO:root:304 GET /register (127.0.0.1) 14.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\account.py modified; restarting server
+INFO:root:304 GET /login (127.0.0.1) 19.00ms
+INFO:root:304 GET /register (127.0.0.1) 20.00ms
+INFO:root:302 POST /register (127.0.0.1) 0.00ms
+INFO:root:200 GET /login (127.0.0.1) 8.00ms
+INFO:root:200 GET /register (127.0.0.1) 22.00ms
+INFO:root:302 POST /register (127.0.0.1) 0.00ms
+INFO:root:200 GET /login (127.0.0.1) 8.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\config.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `tbl_member`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:ROLLBACK
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `comments`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:ROLLBACK
+INFO:sqlalchemy.engine.base.Engine:
+CREATE TABLE tbl_member (
+	member_id INTEGER NOT NULL AUTO_INCREMENT, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(50) NOT NULL, 
+	longitude FLOAT, 
+	fullname VARCHAR(50), 
+	age VARCHAR(20), 
+	create_date INTEGER, 
+	last_update INTEGER, 
+	email VARCHAR(150), 
+	PRIMARY KEY (member_id)
+)ENGINE=MyISAM CHARSET=utf8
+
+
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:CREATE UNIQUE INDEX ix_tbl_member_username ON tbl_member (username)
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:
+CREATE TABLE comments (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	title VARCHAR(255) NOT NULL, 
+	`like` INTEGER, 
+	img_path VARCHAR(255) NOT NULL, 
+	status_id INTEGER, 
+	user_id INTEGER, 
+	comment_total INTEGER, 
+	create_date INTEGER, 
+	last_update INTEGER, 
+	PRIMARY KEY (id)
+)ENGINE=MyISAM CHARSET=utf8
+
+
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+ERROR:root:index.html code:
+  1  def _execute():  # _layout.html:0
+  2      _buffer = []  # _layout.html:0
+  3      _append = _buffer.append  # _layout.html:0
+  4      _append('<!DOCTYPE html>\n<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0" />\n<title>')  # _layout.html:8
+  5      _append('Home')  # index.html:2 (via _layout.html:8)
+  6      _append('</title>\n<meta name="description" content="">\n<meta name="author" content="">\n<meta property="og:title" content="" />\n<meta property="og:type" content="company" />\n<meta property="og:url" content="')  # _layout.html:13
+  7      _tmp = request.protocol + '://' + request.host  # _layout.html:13
+  8      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:13
+  9      else: _tmp = _utf8(str(_tmp))  # _layout.html:13
+ 10      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:13
+ 11      _append(_tmp)  # _layout.html:13
+ 12      _append('" />\n<meta property="og:image" content="')  # _layout.html:14
+ 13      _tmp = request.protocol + '://' + request.host  # _layout.html:14
+ 14      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:14
+ 15      else: _tmp = _utf8(str(_tmp))  # _layout.html:14
+ 16      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:14
+ 17      _append(_tmp)  # _layout.html:14
+ 18      _append('/static/img/fb_image.jpg" />\n<meta property="og:site_name" content="" />\n<meta name="viewport" content="width=1024">\n<link href="')  # _layout.html:18
+ 19      _tmp = static_url('css/bootstrap.min.css')  # _layout.html:18
+ 20      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:18
+ 21      else: _tmp = _utf8(str(_tmp))  # _layout.html:18
+ 22      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:18
+ 23      _append(_tmp)  # _layout.html:18
+ 24      _append('" rel="stylesheet">\n<style type="text/css">\nbody {\npadding-top: 60px;\npadding-bottom: 40px;\n}\n</style>\n<!--<link href="')  # _layout.html:25
+ 25      _tmp = static_url('css/bootstrap-responsive.min.css')  # _layout.html:25
+ 26      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:25
+ 27      else: _tmp = _utf8(str(_tmp))  # _layout.html:25
+ 28      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:25
+ 29      _append(_tmp)  # _layout.html:25
+ 30      _append('" rel="stylesheet">-->\n<link href="')  # _layout.html:26
+ 31      _tmp = static_url('css/font-awesome.min.css')  # _layout.html:26
+ 32      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:26
+ 33      else: _tmp = _utf8(str(_tmp))  # _layout.html:26
+ 34      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:26
+ 35      _append(_tmp)  # _layout.html:26
+ 36      _append('" rel="stylesheet">\n<link href="')  # _layout.html:27
+ 37      _tmp = static_url('css/app.css')  # _layout.html:27
+ 38      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:27
+ 39      else: _tmp = _utf8(str(_tmp))  # _layout.html:27
+ 40      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:27
+ 41      _append(_tmp)  # _layout.html:27
+ 42      _append('" rel="stylesheet">\n<!--[if IE 7]>\n<link href="')  # _layout.html:30
+ 43      _tmp = static_url('css/font-awesome-ie7.min.css')  # _layout.html:30
+ 44      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:30
+ 45      else: _tmp = _utf8(str(_tmp))  # _layout.html:30
+ 46      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:30
+ 47      _append(_tmp)  # _layout.html:30
+ 48      _append('"rel="stylesheet">\n<![endif]-->\n<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->\n<!--[if lt IE 9]>\n<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>\n<![endif]-->\n')  # _layout.html:38
+ 49      _append('\n</head>\n<body>\n<!-- Navigation -->\n<div class="navbar navbar-inverse navbar-fixed-top">\n<div class="navbar-inner">\n<div class="container">\n<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">\n<span class="icon-bar"></span>\n<span class="icon-bar"></span>\n<span class="icon-bar"></span>\n</a>\n<a class="brand" href="/"><i class="icon-th"></i> ')  # _layout.html:52
+ 50      _tmp = _("Site_Name")  # _layout.html:52
+ 51      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:52
+ 52      else: _tmp = _utf8(str(_tmp))  # _layout.html:52
+ 53      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:52
+ 54      _append(_tmp)  # _layout.html:52
+ 55      _append('</a>\n<div class="nav-collapse collapse">\n<ul class="nav pull-right">\n<li class="divider-vertical"></li>\n')  # _layout.html:56
+ 56      if handler.current_user:  # _layout.html:56
+ 57          _append('\n<li><a href="#"><i class="icon-search icon-large"></i></a></li>\n<li class="divider-vertical"></li>\n<li><a href="#"><i class="icon-facetime-video icon-large"></i></a></li>\n<li class="divider-vertical"></li>\n<li><a href="#"><i class="icon-envelope icon-large"></i> <span class="badge badge-important">3</span></a></li>\n<li class="divider-vertical"></li>\n<li class="dropdown">\n<a class="dropdown-toggle" data-toggle="dropdown" href="#">\n<i class="icon-user icon-large"></i>\n')  # _layout.html:66
+ 58          _tmp = handler.get_current_userinfo('screen_name')  # _layout.html:66
+ 59          if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:66
+ 60          else: _tmp = _utf8(str(_tmp))  # _layout.html:66
+ 61          _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:66
+ 62          _append(_tmp)  # _layout.html:66
+ 63          _append('\n<b class="caret"></b>\n</a>\n<ul class="dropdown-menu">\n<li><a href="/register"><i class="icon-user"></i> My Profile</a></li>\n<li><a href="/login"><i class="icon-cog"></i> Settings</a></li>\n<li><a href="/logout"><i class="icon-lock"></i> Log Out</a></li>\n</ul>\n</li>\n')  # _layout.html:75
+ 64          pass  # _layout.html:75
+ 65      else:  # _layout.html:75
+ 66          _append('\n<li><a href="/register">Register</a></li>\n<li class="divider-vertical"></li>\n<li><a href="/login">Login</a></li>\n')  # _layout.html:79
+ 67          pass  # _layout.html:56
+ 68      _append('\n</ul>\n</div><!--/.nav-collapse -->\n</div>\n</div>\n</div>\n<!-- End Navigation -->\n<div class="container">\n')  # _layout.html:89
+ 69      _append('\n<!-- Main hero unit for a primary marketing message or call to action -->\n<div class="hero-unit">\n<h1>Hello, world! ')  # index.html:10 (via _layout.html:89)
+ 70      _tmp = user.username  # index.html:10 (via _layout.html:89)
+ 71      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # index.html:10 (via _layout.html:89)
+ 72      else: _tmp = _utf8(str(_tmp))  # index.html:10 (via _layout.html:89)
+ 73      _tmp = _utf8(xhtml_escape(_tmp))  # index.html:10 (via _layout.html:89)
+ 74      _append(_tmp)  # index.html:10 (via _layout.html:89)
+ 75      _append('</h1>\n<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>\n<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>\n</div>\n<!-- Example row of columns -->\n<div class="row">\n<div class="span4">\n<h2>Heading</h2>\n<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n<p><a class="btn" href="#">View details &raquo;</a></p>\n</div>\n<div class="span4">\n<h2>Heading</h2>\n<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n<p><a class="btn" href="#">View details &raquo;</a></p>\n</div>\n<div class="span4">\n<h2>Heading</h2>\n<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\n<p><a class="btn" href="#">View details &raquo;</a></p>\n</div>\n</div>\n')  # index.html:33 (via _layout.html:89)
+ 76      _append('\n<hr>\n<footer>\n<p>&copy; ')  # _layout.html:94
+ 77      _tmp = _("Site_Name")  # _layout.html:94
+ 78      if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:94
+ 79      else: _tmp = _utf8(str(_tmp))  # _layout.html:94
+ 80      _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:94
+ 81      _append(_tmp)  # _layout.html:94
+ 82      _append(' 2013</p>\n<a href="/terms">Terms & Conditions</a>\n</footer>\n</div>\n<!-- JavaScript -->\n')  # _layout.html:101
+ 83      if handler.settings['debug'] == False:  # _layout.html:101
+ 84          _append('\n<script src="http://code.jquery.com/jquery-latest.js"></script>\n<script src="')  # _layout.html:103
+ 85          _tmp = static_url('js/bootstrap.min.js')  # _layout.html:103
+ 86          if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:103
+ 87          else: _tmp = _utf8(str(_tmp))  # _layout.html:103
+ 88          _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:103
+ 89          _append(_tmp)  # _layout.html:103
+ 90          _append('"></script>\n<script src="')  # _layout.html:104
+ 91          _tmp = static_url('js/app.min.js')  # _layout.html:104
+ 92          if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:104
+ 93          else: _tmp = _utf8(str(_tmp))  # _layout.html:104
+ 94          _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:104
+ 95          _append(_tmp)  # _layout.html:104
+ 96          _append('"></script>\n')  # _layout.html:105
+ 97          pass  # _layout.html:105
+ 98      else:  # _layout.html:105
+ 99          _append('\n<script src="http://code.jquery.com/jquery-latest.js"></script>\n<script src="')  # _layout.html:107
+100          _tmp = static_url('js/bootstrap.min.js')  # _layout.html:107
+101          if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:107
+102          else: _tmp = _utf8(str(_tmp))  # _layout.html:107
+103          _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:107
+104          _append(_tmp)  # _layout.html:107
+105          _append('"></script>\n<script src="')  # _layout.html:108
+106          _tmp = static_url('js/app.js')  # _layout.html:108
+107          if isinstance(_tmp, _string_types): _tmp = _utf8(_tmp)  # _layout.html:108
+108          else: _tmp = _utf8(str(_tmp))  # _layout.html:108
+109          _tmp = _utf8(xhtml_escape(_tmp))  # _layout.html:108
+110          _append(_tmp)  # _layout.html:108
+111          _append('"></script>\n')  # _layout.html:109
+112          pass  # _layout.html:101
+113      _append('\n')  # _layout.html:110
+114      _append('\n')  # index.html:5 (via _layout.html:110)
+115      _append('\n<!-- End JavaScript -->\n</body>\n</html>\n')  # _layout.html:114
+116      return _utf8('').join(_buffer)  # _layout.html:0
+ERROR:root:Uncaught exception GET / (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8865', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', body='', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8865', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8865/login', 'Cookie': 'userkey=dXRpbC5OZXdJRCgp|1372735346|10745755bce2e2dcff5a313eb660a5479ebe0944; userinfo="YWRtaW4=|1372735346|0e1c7d713bce94e9e2e1a16bfc38ef0f836280d2"; _xsrf=4c9f5c24f73a4dd69e2a84db5d036738', 'If-None-Match': '"da729ce593b57b7c9867b7790589ca492442830b"'})
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\tornado-2.4.1-py2.7.egg\tornado\web.py", line 1042, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "G:\GitHub\tornado_tpl\src\web\handlers\web\index.py", line 16, in get
+    return self.render("index.html",user=db_user)
+  File "C:\Python27\lib\site-packages\tornado-2.4.1-py2.7.egg\tornado\web.py", line 500, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Python27\lib\site-packages\tornado-2.4.1-py2.7.egg\tornado\web.py", line 607, in render_string
+    return t.generate(**namespace)
+  File "C:\Python27\lib\site-packages\tornado-2.4.1-py2.7.egg\tornado\template.py", line 261, in generate
+    return execute()
+  File "index_html.generated.py", line 70, in _execute
+    _tmp = user.username  # index.html:10 (via _layout.html:89)
+AttributeError: 'NoneType' object has no attribute 'username'
+ERROR:root:500 GET / (127.0.0.1) 84.00ms
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `tbl_member`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `comments`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:200 GET / (127.0.0.1) 55.00ms
+INFO:root:304 GET /static/css/bootstrap.min.css?v=ac928 (127.0.0.1) 22.00ms
+INFO:root:304 GET /static/css/font-awesome.min.css?v=8992b (127.0.0.1) 0.00ms
+INFO:root:304 GET /static/css/app.css?v=d41d8 (127.0.0.1) 1.00ms
+INFO:root:304 GET /static/js/bootstrap.min.js?v=56241 (127.0.0.1) 1.00ms
+INFO:root:304 GET /static/js/app.js?v=74717 (127.0.0.1) 0.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\models\member_model.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:25:28 1
+ERROR:root:04/07/2013 14:25:29 2
+ERROR:root:04/07/2013 14:25:29 3
+INFO:root:200 GET /register (127.0.0.1) 17.00ms
+INFO:root:304 GET /login (127.0.0.1) 10.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:26:41 1
+ERROR:root:04/07/2013 14:26:41 3
+INFO:root:200 GET /devgen (127.0.0.1) 2.00ms
+ERROR:root:04/07/2013 14:26:47 1
+ERROR:root:04/07/2013 14:26:47 3
+INFO:root:304 GET /devgen (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:27:04 1
+ERROR:root:04/07/2013 14:27:04 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:27:18 1
+ERROR:root:04/07/2013 14:27:18 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:46:04 1
+ERROR:root:04/07/2013 14:46:04 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:46:17 1
+ERROR:root:04/07/2013 14:46:17 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+ERROR:root:04/07/2013 14:47:14 1
+ERROR:root:04/07/2013 14:47:14 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+ERROR:root:04/07/2013 14:47:14 1
+ERROR:root:04/07/2013 14:47:14 3
+INFO:root:304 GET /devgen (127.0.0.1) 1.00ms
+ERROR:root:04/07/2013 14:47:16 1
+ERROR:root:04/07/2013 14:47:16 3
+INFO:root:200 GET /devgen (127.0.0.1) 1.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\dev_gen.py modified; restarting server
+ERROR:root:04/07/2013 14:49:45 1
+ERROR:root:04/07/2013 14:49:45 3
+INFO:root:200 GET /devgen (127.0.0.1) 2.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:304 GET / (127.0.0.1) 37.00ms
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT tbl_member.member_id AS tbl_member_member_id, tbl_member.username AS tbl_member_username, tbl_member.password AS tbl_member_password, tbl_member.longitude AS tbl_member_longitude, tbl_member.fullname AS tbl_member_fullname, tbl_member.age AS tbl_member_age, tbl_member.create_date AS tbl_member_create_date, tbl_member.last_update AS tbl_member_last_update, tbl_member.email AS tbl_member_email 
+FROM tbl_member 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:304 GET / (127.0.0.1) 19.00ms
+INFO:root:304 GET /login (127.0.0.1) 17.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:root:304 GET /register (127.0.0.1) 18.00ms
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `comments`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:DESCRIBE `users`
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:ROLLBACK
+INFO:sqlalchemy.engine.base.Engine:
+CREATE TABLE users (
+	member_id INTEGER NOT NULL AUTO_INCREMENT, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(50) NOT NULL, 
+	longitude FLOAT, 
+	fullname VARCHAR(50), 
+	age VARCHAR(20), 
+	create_date INTEGER, 
+	last_update INTEGER, 
+	email VARCHAR(150), 
+	PRIMARY KEY (member_id)
+)ENGINE=MyISAM CHARSET=utf8
+
+
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:CREATE UNIQUE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT users.member_id AS users_member_id, users.username AS users_username, users.password AS users_password, users.longitude AS users_longitude, users.fullname AS users_fullname, users.age AS users_age, users.create_date AS users_create_date, users.last_update AS users_last_update, users.email AS users_email 
+FROM users 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:304 GET / (127.0.0.1) 87.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\orm\connection.py modified; restarting server
+INFO:root:G:\GitHub\tornado_tpl\src\web\models\UserModel.py modified; restarting server
+INFO:root:304 GET /register (127.0.0.1) 20.00ms
+INFO:root:G:\GitHub\tornado_tpl\src\web\handlers\web\index.py modified; restarting server
+INFO:sqlalchemy.engine.base.Engine:SELECT DATABASE()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'character_set%%'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SHOW VARIABLES LIKE 'sql_mode'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.longitude AS users_longitude, users.fullname AS users_fullname, users.age AS users_age, users.create_date AS users_create_date, users.last_update AS users_last_update, users.email AS users_email 
+FROM users 
+ LIMIT %s
+INFO:sqlalchemy.engine.base.Engine:(1,)
+INFO:root:304 GET / (127.0.0.1) 38.00ms

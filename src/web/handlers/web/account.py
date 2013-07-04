@@ -5,6 +5,8 @@ import tornado.web
 from base import BaseHandler
 import forms
 from web.helper import hash_password
+import web.models.UserModel as m
+import orm.connection as db
 
 class LoginHandler(BaseHandler):
     @tornado.web.asynchronous
@@ -40,7 +42,6 @@ class LogoutHandler(BaseHandler):
         self.logout_user()
 
 class RegisterHandler(BaseHandler):
-    @tornado.web.asynchronous
     def get(self):
         form = forms.RegistrationForm()
         form.email.data="my@oubk.com"
@@ -48,9 +49,9 @@ class RegisterHandler(BaseHandler):
         form.subscribe.data=True
         return self.render("register.html",form=form)
     
-    #@tornado.gen.engine
+    @tornado.gen.engine
     def check_invite(self, invite_code, callback):
-        callback(True)
+        callback(False)
         #self.write("check_invite,%s" % invite_code)
         '''
         if self.settings['invite_only']:
@@ -72,24 +73,26 @@ class RegisterHandler(BaseHandler):
     def _invite_check(self,spec):
         return True
     
-    #@tornado.gen.engine
     @tornado.web.asynchronous
+    @tornado.gen.engine
     def post(self, *args, **kwargs):
         if self.current_user:
             self.redirect('/')
             return
         
-        #invite_code = self.get_argument('invite', None)
-        #is_valid_invite = yield tornado.gen.Task(self.check_invite, invite_code)
+        invite_code = self.get_argument('invite', None)
+        is_valid_invite = yield tornado.gen.Task(self.check_invite, invite_code)
         
-        #if not is_valid_invite:
-        #    self.redirect('/register')
-        #    return
+        if not is_valid_invite:
+            self.redirect('/login')
+            return
         
         form = forms.RegistrationForm(self)
         if not form.validate():
             self.render("register.html", form=form)
             return
         
-        self.write("Hello,%s" % form.email.data)
+        id = m.add_member()
+        #self.write("Hello,%s" % form.email.data)
+        self.redirect('/%s' % id)
         #password_hash = helper.hash_password(form.password.data)

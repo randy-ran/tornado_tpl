@@ -2,14 +2,17 @@
 web_port=8865
 #web part settings end
 
-db_mysql_server="192.168.1.11"
+db_mysql_server="127.0.0.1"
 db_mysql_port="3306"
 db_mysql_user="root"
-db_mysql_password="techsailor.com"
-db_mysql_dbname="medo"
+db_mysql_password="password"
+db_mysql_dbname="niuping"
 #db settings end
 
 password_salt="xl8moEeQSNa0t8WUzBM4VQ=="
+
+#level CRITICAL  ERROR WARNING INFO DEBUG NOTSET
+log_level = "DEBUG"
 
 dev_enable=True
 server_log_tofile=False
