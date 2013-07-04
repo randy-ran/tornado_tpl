@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import hashlib
 import config
 try:
@@ -6,7 +7,7 @@ except ImportError:
     import simplejson as json
 
 def hash_password(password):
-    salt = "xl8moEeQSNa0t8WUzBM4VQ==" #config['password_salt']
+    salt = config.password_salt
     return hashlib.sha512(password + salt).hexdigest()
 
 

@@ -8,6 +8,7 @@ import logging
 from tornado.options import define, options
 from handlers.web.account import *
 from handlers.web.dev_gen import *
+from handlers.web.upload import *
 from handlers.web.index import IndexHandler
 from comm.logger import log
 
@@ -18,7 +19,8 @@ class Application(tornado.web.Application):
             (r"/register", RegisterHandler),
             (r"/login", LoginHandler),
             (r"/logout",LogoutHandler),
-            (r"/devgen",DevGenHandler),  
+            (r"/devgen",DevGenHandler),
+            (r"/upload",UploadHandler),
             #(r"/admin/member_list(?:(?:/?)$|/)(\d+)?", MemberHandler),
         ]
         

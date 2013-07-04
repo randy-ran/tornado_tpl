@@ -96,14 +96,13 @@
     </footer>
 </div>
 
-
 <!-- JavaScript -->
 {% if handler.settings['debug'] == False %}
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="{{ static_url('js/bootstrap.min.js') }}"></script>
 <script src="{{ static_url('js/app.min.js') }}"></script>
 {% else %}
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="{{ static_url('js/jquery-1.9.0.min.js') }}"></script>
 <script src="{{ static_url('js/bootstrap.min.js') }}"></script>
 <script src="{{ static_url('js/app.js') }}"></script>
 {% end %}
