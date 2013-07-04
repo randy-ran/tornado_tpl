@@ -6,6 +6,7 @@ from base import BaseHandler
 import time
 import os.path, random, string
 from comm.logger import log
+from pprint import pprint
 
 class UploadHandler(BaseHandler):
     def get(self):

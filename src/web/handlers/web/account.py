@@ -7,6 +7,8 @@ import forms
 from web.helper import hash_password
 import web.models.UserModel as m
 import orm.connection as db
+from pprint import pprint
+from comm.logger import log
 
 class LoginHandler(BaseHandler):
     @tornado.web.asynchronous
@@ -92,7 +94,7 @@ class RegisterHandler(BaseHandler):
             self.render("register.html", form=form)
             return
         
-        id = m.add_member()
+        id =1# m.add_member()
         #self.write("Hello,%s" % form.email.data)
         self.redirect('/%s' % id)
         #password_hash = helper.hash_password(form.password.data)
